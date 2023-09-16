@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign-up Form</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="left">
+				<div class="logo">
+					<img id="logo" src="/assets/images/logo.jpg" alt="logo" />
+					<h2>Serius Travels</h2>
+				</div>
+
+				<div class="credits">
+					<p>
+						Photo by
+						<a
+							href="https://unsplash.com/@gkumar2175?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+							target="_blank"
+							>Ganapathy Kumar</a
+						>
+						on
+						<a
+							href="https://unsplash.com/photos/L75D18aVal8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+							target="_blank"
+							>Unsplash</a
+						>
+					</p>
+				</div>
+
+				<img
+					class="bg-img"
+					src="/assets/images/ganapathy-kumar-L75D18aVal8-unsplash.jpg"
+					alt="Desert"
+				/>
+			</div>
+			<div class="right">
+				<div class="intro">
+					<p>
+						This is not a real online service! You know you need something like
+						this in your life to help you realize your deepest dreams.
+					</p>
+					<p>Sign up now to get started.</p>
+					<br />
+
+					<p>You know you want to.</p>
+				</div>
+
+				<form action="" method="post">
+					<div class="form-box">
+						<h2>Let's do this!</h2>
+						<div class="form-content">
+							<div class="column1">
+								<label for="fname">FIRST NAME:</label><br />
+								<input
+									type="text"
+									id="fname"
+									name="fname"
+									maxlength="20"
+									required
+								/><br />
+								<label for="email">EMAIL:</label><br />
+								<input type="email" id="email" name="email" required /><br />
+								<label for="cpass">CREATE PASSWORD:</label><br />
+								<input
+									type="password"
+									id="cpass"
+									name="cpass"
+									minlength="8"
+									required
+								/><br />
+							</div>
+							<div class="column2">
+								<label for="lname">LAST NAME:</label><br />
+								<input
+									type="text"
+									id="lname"
+									name="lname"
+									maxlength="20"
+									required
+								/><br />
+								<label for="phone-no">PHONE NUMBER:</label><br />
+								<input
+									type="tel"
+									id="phone-no"
+									name="phone-no"
+									required
+								/><br />
+								<label for="cpass2">CONFIRM PASSWORD:</label><br />
+								<input
+									type="password"
+									id="cpass2"
+									name="cpass2"
+									required
+								/><br />
+							</div>
+						</div>
+					</div>
+					<div id="password-error" class="error-message"></div>
+					<div class="form-button">
+						<button type="submit">Create Account</button>
+					</div>
+				</form>
+
+				<div class="footer">
+					<p>Already have an account? <a href="">Log In</a></p>
+				</div>
+
+				<div class="copyright">
+					<p>&copy Sudhir Das</p>
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					<p>
+						| <a href="https://github.com/untserius/signup-form">Source Code</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
